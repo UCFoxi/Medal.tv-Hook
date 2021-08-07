@@ -2,7 +2,7 @@
 #include <Psapi.h>
 #include <cstdint>
 
-__forceinline bool bDataCompare(const BYTE* pData, const BYTE* bMask, const char* szMask)
+__forceinline const bool bDataCompare(const BYTE* pData, const BYTE* bMask, const char* szMask)
 {
 	for (; *szMask; ++szMask, ++pData, ++bMask)
 	{
